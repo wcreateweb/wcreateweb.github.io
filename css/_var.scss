@@ -1,0 +1,43 @@
+$gray: #cccccc;
+$gray-light: rgb(238,238,238);
+$gray-light2:#cecece;
+$blue: #4d9ab2;
+$blue-light: #5FC4ED;
+$dark-blue: #2C64E8;
+$green: #4bb374;
+$red: #e33f48;
+$orange: #F38630;
+$yellow: #dbc512;
+$white: #ffffff;
+$jet: rgb(34, 34, 34);
+$jet-light: rgb(56, 40, 40);
+
+$font: 'Lato', sans-serif !default;
+
+$font-size: 15px;
+$lh: 22.2px;
+
+$box-shadow: 0 0 5px rgba(0,0,0,.2);
+$box-shadow-hover: 0 2px 9px rgba(0,0,0,.2);
+$border: 1px solid $gray;
+
+$bg-gradient:linear-gradient(-30deg, #2C64E8, #2CE8CF);
+$bg-gradient-gray:linear-gradient(135deg,#fafafa 0,#f2f2f2 60%,#eaeaea 100%);
+
+// Animations
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    margin-top: 30px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+

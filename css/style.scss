@@ -1,0 +1,95 @@
+@import url(//fonts.googleapis.com/css?family=Lato:400,700,900);
+@import "var";
+
+html, * {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: $font;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-top: 0;
+}
+
+.logo h1 {
+  text-align: center;
+  color: $white;
+  background-image: url(../img/bar.png);
+  background-position: bottom center;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  margin: 0;
+  line-height: 50px;
+}
+
+.landing-wrap {
+  background:$bg-gradient;
+  color: #fff;
+}
+
+.landing {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 150px;
+  min-height: 500px;
+  position: relative;
+}
+.landing-title {
+  margin-top: 0;
+}
+
+.landing-animation-1 {
+  animation: fadeUp 1s;
+}
+.landing-animation-2 {
+  animation: fadeUp 1s;
+}
+.landing-animation-3 {
+  animation: fadeUp 1s;
+}
+
+/* ==========================================================================
+  Components
+  ========================================================================== */
+.btn {
+  background: $orange;
+  background-image: linear-gradient(-35deg, #F37130, #F39830);
+  white-space: nowrap;
+  display: inline-block;
+  padding: 12px;
+  color: $white;
+  box-shadow: $box-shadow;
+  transition-delay: 100ms;
+  transition: all 300ms;
+  &:hover {
+    box-shadow: $box-shadow-hover;
+    background-image: linear-gradient(-35deg, #F47B3E, #F29121);
+  }
+}
+
+.btn img {
+  margin-bottom: -5px;
+  padding-left: 10px;
+}
+
+button {
+  border: 0;
+}
+
+.btn-secondary {
+  background: $white;
+  color: $blue;
+  border: 2px solid $blue;
+  &:hover {
+    background-image: linear-gradient(180deg, #ffffff, #fefefe, #fcfcfc);
+  }
+}
