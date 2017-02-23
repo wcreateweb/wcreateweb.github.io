@@ -8,8 +8,8 @@ html, * {
 body {
   background: #fff;
   font-family: $font;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 13px;
+  line-height: 20px;
   margin: 0;
 }
 
@@ -19,6 +19,11 @@ a {
 
 p {
   margin-top: 0;
+}
+
+.slanted {
+  font-style: italic;
+  font-weight: 800;
 }
 
 .header, .container {
@@ -106,6 +111,7 @@ p {
 }
 .service {
   width: 30%;
+  text-align: center;
   @include mobile {
     width: 100%;
     border-bottom: 1px solid #cccccc;
@@ -164,6 +170,72 @@ p {
   }
 }
 
+.portfolio-intro {
+  width: 340px;
+}
+
+.project {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.project-titel {
+  background: $white;
+  width: 100%;
+  max-width: 300px;
+  text-transform: uppercase;
+  display: block;
+  padding: 7px;
+}
+.project-descr {
+  width: 50%;
+  @include mobile {
+    width: 100%;
+  }
+}
+.project-descr p {
+  background: $white;
+}
+.project-image {
+  width: 48%;
+  @include mobile {
+    width: 100%;
+  }
+}
+.project-image img {
+  max-width: 130%;
+  margin: 0 auto;
+  display: block;
+}
+.project .container {
+  display: flex;
+  justify-content: space-between;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+.project::after {
+  position: absolute;
+  top:0;
+  left: 0;
+  transform: skewY(-20deg);
+  content: '';
+  display: block;
+  width: 100%;
+  height: 800px;
+  max-height: 100%;
+  background: $green;
+  z-index: -999;
+}
+.project:nth-child(even)::after {
+  transform: skewY(20deg);
+}
+.project:nth-child(even) .container {
+  flex-direction: row-reverse;
+}
+.project:nth-child(even) img {
+  right: -40px;
+}
 /* ==========================================================================
   Components
   ========================================================================== */
