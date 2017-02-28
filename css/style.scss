@@ -26,6 +26,11 @@ p {
   font-weight: 800;
 }
 
+.quote {
+  color: #555;
+  font-style: italic;
+}
+
 .header, .container {
   max-width: 960px;
   margin: 20px auto;
@@ -303,6 +308,15 @@ p {
   color: #fff;
   font-weight: 800;
   font-size: 2em;
+}
+
+.profile-picture {
+  max-width: 350px;
+  float: right;
+}
+
+.text-section {
+  max-width: 350px;
 }
 
 /* ==========================================================================
