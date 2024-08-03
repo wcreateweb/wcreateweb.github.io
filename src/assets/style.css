@@ -1,0 +1,13 @@
+:root {
+    --font-size: 16px;
+    --line-height: 24px;
+    --font-family: "Inter", sans-serif;
+
+    --color-paragraph: #434343;
+    --color-heading: #111111;
+}
+
+/* UTILS */
+.visuallyhidden {
+    display: none;
+}
