@@ -3,6 +3,8 @@
     --line-height: 24px;
     --font-family: "Inter", sans-serif;
 
+    --color-bluelight: #E9F1F8;
+
     --color-paragraph: #434343;
     --color-heading: #111111;
 
@@ -25,6 +27,12 @@ body {
     font-family: var(--font-family);
 }
 
+p {
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    color: var(--color-paragraph);
+}
+
 .container {
     max-width: var(--container);
     margin: 0 auto;
@@ -32,7 +40,7 @@ body {
 
 .header__container {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 320px 1fr;
     align-items: center;
 }
 
@@ -41,11 +49,13 @@ body {
     justify-content: flex-end;
     padding: 24px;
 }
+
 .nav__list {
     display: flex;
     list-style: none;
     padding: 0;
 }
+
 .nav__link {
     padding: 8px;
     text-decoration: none;
@@ -56,6 +66,94 @@ body {
     display: block;
     font-weight: 600;
     letter-spacing: 0.5px;
+}
+
+/* Homepage */
+.homehero__container {
+    display: grid;
+    grid-template-columns: 480px auto;
+    padding: 40px 0 80px 0;
+}
+
+.homehero__introtext {
+    padding-right: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.homehero__introtext h1 {
+    margin-bottom: 16px;
+}
+
+.imagegrid {
+    display: grid;
+    grid-template-columns: repeat(18, 40px);
+    grid-template-rows: repeat(9, 40px);
+}
+
+.imagegrid__project {
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+}
+
+.imagegrid__project img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.imagegrid__project_1 {
+    width: 160px;
+    height: 160px;
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 4;
+}
+
+.imagegrid__project_2 {
+    width: 80px;
+    height: 80px;
+    grid-column: 7 / span 2;
+}
+
+.imagegrid__project_3 {
+    width: 240px;
+    height: 240px;
+    grid-column: 6 / span 8;
+    grid-row: 4 / span 8;
+}
+
+.imagegrid__project_4 {
+    width: 240px;
+    height: 140px;
+    grid-column: 13 / span 8;
+    grid-row: 2 / span 4;
+}
+
+.imagegrid__project_5 {
+    width: 80px;
+    height: 80px;
+    grid-column: 14 / span 2;
+    grid-row: 6 / span 2;
+}
+
+.servicesbar {
+    background: var(--color-bluelight);
+}
+.servicesbar__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.servicesbar__listitem {
+    /* padding: 16px 0; */
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /* UTILS */
