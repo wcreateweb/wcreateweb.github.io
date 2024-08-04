@@ -5,6 +5,57 @@
 
     --color-paragraph: #434343;
     --color-heading: #111111;
+
+    --container: 1200px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--font-family);
+}
+
+.container {
+    max-width: var(--container);
+    margin: 0 auto;
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 24px;
+}
+.nav__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.nav__link {
+    padding: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--color-paragraph);
+    min-width: 120px;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 /* UTILS */
