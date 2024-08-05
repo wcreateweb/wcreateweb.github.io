@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "pnpm exec eleventy"
+    "build": "pnpm exec eleventy",
+    "dev": "eleventy --serve"
   },
   "keywords": [],
   "author": "",
