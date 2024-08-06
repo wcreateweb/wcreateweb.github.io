@@ -12,3 +12,4 @@ Created with [11ty](https://www.11ty.dev/) and based on [11ty Skeleton](https://
 - [Eleventy](https://www.11ty.dev/)
 - [Eleventy Skeleton](https://github.com/geotrev/eleventy-skeleton)
 - [Tabler Icons](https://tablericons.com/)
+- [Color names](https://www.colorxs.com/);

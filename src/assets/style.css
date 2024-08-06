@@ -3,10 +3,17 @@
     --line-height: 24px;
     --font-family: "Inter", sans-serif;
 
-    --color-bluelight: #E9F1F8;
+    --color-aliceblue: #E9F1F8;
+    --color-smokyblack: #111111;
+    --color-whitesmoke: #F6F6F6;
 
     --color-paragraph: #434343;
     --color-heading: #111111;
+
+    --color-bg: #ffffff;
+    --color-bg-alt: var(--color-aliceblue);
+    --color-bg-dark: var(--color-smokyblack);
+    --color-bg-dark-alt: var(--color-smokyblack);
 
     --container: 1200px;
 }
@@ -46,41 +53,12 @@ p {
     align-items: center;
 }
 
-.nav {
-    display: flex;
-    justify-content: flex-end;
-    padding: 24px;
-}
-
-.nav__list {
-    display: flex;
-    list-style: none;
-    padding: 0;
-}
-
-.nav__link {
-    padding: 8px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: var(--color-paragraph);
-    min-width: 120px;
-    display: block;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
-
-.navmobile__btn {
-    display: none;
-    width: 30px;
-    height: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
 .logo {
     padding: 16px;
+}
+
+.navslide {
+    padding: 24px;
 }
 
 .navmobile {
@@ -90,15 +68,179 @@ p {
     padding: 16px;
 }
 
+.nav__list {
+    list-style: none;
+    padding: 0;
+    flex: 1;
+}
+
+.subnav_list {
+    padding-left: 24px;
+}
+
+.nav__slideout {
+    background: var(--color-bg-dark);
+    color: var(--color-bg);
+    width: 380px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 300;
+    animation-duration: 0.5s;
+    animation-name: animate-openmenu;
+    animation-fill-mode: backwards;
+    opacity: 0;
+    display: none;
+    transform-origin: top right;
+}
+
 @media screen and (max-width: 768px) {
-    .navmobile__btn {
-        display: block;
+    .nav__slideout {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@keyframes animate-openmenu {
+    0% {
+        opacity: 0;
+        transform: translateX(15px);
     }
 
-    .nav {
-        display: none;
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.nav__slideout--deleting {
+    display: none;
+    opacity: 0;
+    animation-duration: 350ms;
+    animation-name: animate-closemenu;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate-closemenu {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
     }
 
+    100% {
+        opacity: 0;
+        transform: translateX(15px)
+    }
+}
+
+.nav__slideout--open {
+    display: block;
+    opacity: 1;
+}
+
+.nav__list a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 4px;
+    display: block;
+}
+
+.nav__list a:hover {
+    color: #ffffff;
+}
+
+.subnav_list a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.navslide {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.navslide__footer {
+    display: flex;
+}
+
+.navslide__head {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navslide__closebtn {
+    background: none;
+    border: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navslide__footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0 0 0;
+}
+
+.navslide__socials {
+    display: flex;
+}
+
+.navslide__social a {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.navslide__email {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+.navslide__email img {
+    margin-right: 8px;
+}
+
+.navslide__email a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menubtn {
+    background: var(--color-whitesmoke);
+    border: none;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menubtn .btnwhite {
+    display: none;
+}
+
+.menubtn:hover {
+    background: var(--color-bg-dark);
+    color: #fff;
+}
+
+.menubtn:hover .btnwhite {
+    display: block;
+}
+
+.menubtn:hover .btnblack {
+    display: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 16px;
+}
+
+@media screen and (max-width: 768px) {
     .logo__img {
         height: 40px;
     }

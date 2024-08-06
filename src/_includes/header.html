@@ -1,30 +1,81 @@
 <header>
-    <div class="container">
         <div class="header__container">
             <div class="logo">
                 <a href="/">
-                    <img class="logo__img" src="/assets/img/wcreate_logo.svg" alt="WCreate logo">
+                    <img height="40" width="240" class="logo__img" src="/assets/img/wcreate_logo.svg" alt="WCreate logo">
                 </a>
             </div>
-            <nav class="nav nav--primary" role="navigation" tabindex="-1" aria-labelledby="mainmenulabel">
-                <h2 id="mainmenulabel" class="visuallyhidden">Main Menu</h2>
-                <ul class="nav__list">
-                    <li class="nav__item {{ 'nav__item-active' if page.url == ' / ' }}">
-                        <a class="nav__link" href="/">Home</a>
-                    </li>
-                    <li class="nav__item {{ 'nav__item-active' if page.url == ' / ' }}"">
-                        <a class="nav__link" href="/services">About</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link {{ 'nav__item-active' if page.url == ' / ' }}"" href="/about">About</a>
-                    </li>
-                </ul>
+            <nav class="nav" role="navigation" tabindex="-1" aria-labelledby="mainmenulabel">
+                <button class="menubtn" id="js-navmobile-btn">
+                    <span>Menu</span>
+                    <img src="/assets/img/icon-menu.svg" class="btnblack" alt="Menu">
+                    <img src="/assets/img/icon-menu-w.svg" class="btnwhite" alt="Menu">
+                </button>
+
+                <div class="nav__slideout" id="js-nav">
+                    <h2 id="mainmenulabel" class="visuallyhidden">Main Menu</h2>
+                    <div class="navslide">
+                        <div class="navslide__head">
+                            <button class="navslide__closebtn" id="js-navclosebtn">
+                                <span>Menu</span>
+                                <img height="32" width="32" src="/assets/img/icon-close.svg" alt="Close">
+                            </button>
+                        </div>
+                        <ul class="nav__list">
+                            <li class="nav__item {{ 'nav__item-active' if page.url == ' / ' }}">
+                                <a class="nav__link" href="/">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link {{ 'nav__item-active' if page.url == ' /services ' }}"" href="/services">Diensten</a>
+                                <ul class="nav__list subnav_list">
+                                    <li><a href="/services/web-applicaties">Web-Applicaties</a></li>
+                                    <li><a href="/services/integrations-automations">Integrations & Automations</a></li>
+                                    <li><a href="/services/ai-ml">AI & ML</a></li>
+                                    <li><a href="/services/mobile-apps">Mobile Apps</a></li>
+                                    <li><a href="/services/hosting">E-mail & Hosting</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item {{ 'nav__item-active' if page.url == ' /work ' }}"">
+                                <a class="nav__link" href="/work">Werk</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link {{ 'nav__item-active' if page.url == ' /experts ' }}"" href="/experts">Expertise</a>
+                                <ul class="nav__list subnav_list">
+                                    <li><a href="/experts/shopify">Shopify</a></li>
+                                    <li><a href="/experts/wordpress">Wordpress</a></li>
+                                    <li><a href="/experts/flutter">Flutter</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link {{ 'nav__item-active' if page.url == ' /blog ' }}"" href="/blog">Blog</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link {{ 'nav__item-active' if page.url == ' /contact ' }}"" href="/contact">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="navslide__footer">
+                            <div class="navslide__email">
+                                <img  height="24" width="24" src="/assets/img/icon-at.svg" alt="Email">
+                                <a href="mailto:info@wcreate.nl" title="Verstuur een e-mail naar info@wcreate.nl">info@wcreate.nl</a>
+                            </div>
+                            <div class="navslide__socials">
+                                <div class="navslide__social">
+                                    <a href="https://www.linkedin.com/company/wcreate-nl/">
+                                        <img  height="24" width="24" src="/assets/img/icon-linkedin.svg" alt="Zoek de connectie op via LinkedIn">
+                                    </a>
+                                </div>
+                                <div class="navslide__social">
+                                    <a href="https://instagram.com/wcreate.nl">
+                                        <img  height="24" width="24" src="/assets/img/icon-instagram.svg" alt="Vindt inspiratie op Instagram">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </nav>
             <div class="navmobile">
-                <button class="navmobile__btn" id="js-navmobile-btn">
-                    <img src="/assets/img/icon-menu.svg" alt="Menu">
-                </button>
             </div>
         </div>
-    </div>
 </header>
