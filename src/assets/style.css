@@ -90,7 +90,7 @@ p {
     padding: 16px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .navmobile__btn {
         display: block;
     }
@@ -186,7 +186,7 @@ p {
     grid-row: 6 / span 2;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .homehero__container {
         grid-template-columns: 1fr;
         grid-template-areas: 'images' 'intro';
