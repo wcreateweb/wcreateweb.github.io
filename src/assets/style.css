@@ -6,6 +6,7 @@
     --color-aliceblue: #E9F1F8;
     --color-smokyblack: #111111;
     --color-whitesmoke: #F6F6F6;
+    --color-frenchblue: #2477B9;
 
     --color-paragraph: #434343;
     --color-heading: #111111;
@@ -240,6 +241,20 @@ p {
     padding-right: 16px;
 }
 
+@keyframes floating {
+    from {
+        transform: translate(0, 0px);
+    }
+
+    65% {
+        transform: translate(0, 10px);
+    }
+
+    to {
+        transform: translate(0, -0px);
+    }
+}
+
 @media screen and (max-width: 768px) {
     .logo__img {
         height: 40px;
@@ -298,6 +313,11 @@ p {
     height: 200px;
     grid-column: 1 / span 4;
     grid-row: 2 / span 4;
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
 }
 
 .imagegrid__project_2 {
@@ -319,6 +339,10 @@ p {
     height: 140px;
     grid-column: 12 / span 8;
     grid-row: 2 / span 4;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 .imagegrid__project_5 {
@@ -389,7 +413,7 @@ p {
 }
 
 .servicesbar {
-    background: var(--color-bluelight);
+    background: var(--color-aliceblue);
 }
 
 .servicesbar__list {
@@ -400,12 +424,61 @@ p {
 }
 
 .servicesbar__listitem {
-    /* padding: 16px 0; */
     width: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: relative;
+}
+
+.servicesbar__listitem span {
+    position: relative;
+    z-index: 10;
+}
+
+.servicesbar__listitem.active:after {
+    background: var(--color-frenchblue);
+    content: "";
+    width: 100%;
+    height: 72px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(12px);
+    border-radius: 8px;
+}
+
+.servicesbar__listitem.active span {
+
+    color: #fff;
+    font-weight: 600;
+}
+
+.serviceitem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.serviceitem__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.serviceitem__textcontent {
+    width: 350px;
+}
+
+.serviceitem__image {
+    width: 300px;
+    padding: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .serviceitem {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* UTILS */
