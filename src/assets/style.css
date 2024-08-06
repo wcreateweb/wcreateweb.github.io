@@ -7,6 +7,7 @@
     --color-smokyblack: #111111;
     --color-whitesmoke: #F6F6F6;
     --color-frenchblue: #2477B9;
+    --color-gainsboro: #DCDCDC;
 
     --color-paragraph: #434343;
     --color-heading: #111111;
@@ -261,6 +262,78 @@ p {
     }
 }
 
+/* Footer */
+.footer {
+    background: var(--color-bg-dark);
+    color: var(--color-whitesmoke);
+    padding: 24px 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--color-gainsboro);
+}
+
+.footer a:hover {
+    color: var(--color-whitesmoke);
+}
+
+.footer p {
+    color: var(--color-gainsboro);
+}
+
+.footer__contactmailaddress {
+    display: flex;
+    align-items: center;
+}
+
+.footer__contactaddress {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer__contactaddresslines {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__contactmail {
+    margin-bottom: 24px;
+}
+
+.footer__contactmailaddress img,
+.footer__contactaddress img {
+    margin-right: 8px;
+}
+.footer__title {
+    margin-bottom: 8px;
+    display: block;
+}
+.footer__contactnavlist {
+    list-style: none;
+    padding: 0;
+    min-width: 140px;
+}
+.footer__contactnavlist a {
+    display: block;
+    padding: 4px 4px 4px 0;
+}
+.footergrid {
+    display: grid;
+    grid-template-columns: 400px 1fr 1fr;
+}
+
+.footer__about,
+.footer__contact,
+.footer__contactnav {
+    padding: 24px;
+}
+
+.footer__contactnavlists {
+    display: flex;
+}
+
+
 /* Homepage */
 .homehero__container {
     display: grid;
@@ -270,7 +343,7 @@ p {
 }
 
 .homehero__introtext {
-    padding-right: 140px;
+    padding: 0 140px 0 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
