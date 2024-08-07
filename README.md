@@ -13,3 +13,7 @@ Created with [11ty](https://www.11ty.dev/) and based on [11ty Skeleton](https://
 - [Eleventy Skeleton](https://github.com/geotrev/eleventy-skeleton)
 - [Tabler Icons](https://tablericons.com/)
 - [Color names](https://www.colorxs.com/);
+
+
+### Roadmap
+- Add domain availability check: https://domainr.com/docs/api?q=wcreate.nl
