@@ -8,7 +8,7 @@ description: Website
     <div class="container">
         <div class="homehero__container">
             <div class="homehero__introtext">
-                <h1>Jouw partner in software waar je op kan vertrouwen</h1>
+                <h1>Jouw partner in software waar je op kan bouwen</h1>
 
                 <p class="homehero__description">
                     Wij ontwikkelen en ondersteunen software. Geen toeters en
@@ -54,32 +54,37 @@ description: Website
 <section class="homeservices">
     <div class="servicesbar">
         <div class="container">
-            <ul class="servicesbar__list">
-                <li
-                    class="servicesbar__listitem"
-                    data-serviceid="support-maintainance"
-                >
-                    <span>Support & Maintainance</span>
-                </li>
-                <li
-                    class="servicesbar__listitem active"
-                    data-serviceid="support-webapplicaties"
-                >
-                    <span>(Web)applicaties</span>
-                </li>
-                <li
-                    class="servicesbar__listitem"
-                    data-serviceid="integrations-automations"
-                >
-                    <span>Integrations & Automations</span>
-                </li>
-                <li class="servicesbar__listitem" data-serviceid="ai-ml">
-                    <span>AI & ML</span>
-                </li>
-                <li class="servicesbar__listitem" data-serviceid="mobile-apps">
-                    <span>Mobile Apps</span>
-                </li>
-            </ul>
+            <div class="servicesscroller">
+                <ul class="servicesbar__list">
+                    <li
+                        class="servicesbar__listitem"
+                        data-serviceid="support-maintainance"
+                    >
+                        <span>Support & Maintainance</span>
+                    </li>
+                    <li class="servicesbar__listitem" data-serviceid="ai-ml">
+                        <span>AI & ML</span>
+                    </li>
+                    <li
+                        class="servicesbar__listitem servicebaritem--active"
+                        data-serviceid="support-webapplicaties"
+                    >
+                        <span>(Web)applicaties</span>
+                    </li>
+                    <li
+                        class="servicesbar__listitem"
+                        data-serviceid="integrations-automations"
+                    >
+                        <span>Integrations & Automations</span>
+                    </li>
+                    <li
+                        class="servicesbar__listitem"
+                        data-serviceid="mobile-apps"
+                    >
+                        <span>Mobile</span>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -121,6 +126,89 @@ description: Website
             <div class="serviceitem">
                 <div class="serviceitem__text"></div>
                 <div class="serviceitem__image"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hometools">
+    <div class="container">
+        <div class="hometools__container">
+            <ul class="hometools__list">
+                <li>
+                    <img src="assets/img/logo-flutter.svg" alt="Flutter logo" />
+                </li>
+                <li>
+                    <img
+                        src="assets/img/logo-kinsta.svg"
+                        alt="Kinsta Hosting Logo"
+                    />
+                </li>
+                <li>
+                    <img src="assets/img/logo-shopify.svg" alt="Shopify logo" />
+                </li>
+                <li>
+                    <img
+                        src="assets/img/logo-wordpress.svg"
+                        alt="Wordpress logo"
+                    />
+                </li>
+                <li>
+                    <img src="assets/img/logo-aws.svg" alt="AWS logo" />
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="homecontact">
+    <div class="container">
+        <div class="homecontact__container">
+            <div class="homecontact__form">
+                <div class="homecontact__introtext">
+                    <h3>Hoe kunnen we helpen?</h3>
+                    <p>
+                        We horen graag waar we van dienst kunnen zijn. Een vet idee?
+                        Loopt iets niet lekker? Of heb je gewoon capaciteit nodig?
+                        Neem dan contact met ons op.
+                    </p>
+                </div>
+                <form>
+                    <div class="contactform">
+                        <div class="formfield">
+                            <label for="name">Naam</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Naam"
+                            />
+                        </div>
+                        <div class="formfield">
+                            <label for="email">E-mail</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="E-mail"
+                            />
+                        </div>
+                        <div class="formfield">
+                            <label for="message">Hoe kunnen wij helpen?</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Bericht"
+                            ></textarea>
+                        </div>
+                        <div class="formsubmit">
+                            <button type="submit">Verstuur</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="homecontact__map">
+                
             </div>
         </div>
     </div>
