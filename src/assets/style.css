@@ -506,7 +506,7 @@ p {
     background: var(--color-aliceblue);
 }
 .servicesthumbs .container {
-    
+
 }
 
 .carouselcontainer-thumbs {
@@ -588,7 +588,11 @@ p {
 .hometools__list img {
     margin: 0 16px;
 }
-
+.homecontact__map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .formfield {
     display: flex;
     flex-direction: column;
