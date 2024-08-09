@@ -49,7 +49,6 @@ p {
 }
 
 /* Header */
-
 .header__container {
     display: grid;
     grid-template-columns: 320px 1fr;
