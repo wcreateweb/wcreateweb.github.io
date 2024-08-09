@@ -51,7 +51,7 @@ p {
 /* Header */
 .header__container {
     display: grid;
-    grid-template-columns: 320px 1fr;
+    grid-template-columns: 280px 1fr;
     align-items: center;
 }
 
@@ -782,17 +782,21 @@ p {
     width: 600px;
 }
 
+.servicecase {
+    height: 300px;
+    width: 300px;
+    padding: 24px;
+}
+
 @media screen and (max-width: 601px) {
     .servicecases {
         grid-template-columns: 190px 190px;
         width: 100%;
     }
-}
-
-.servicecase {
-    height: 300px;
-    width: 300px;
-    padding: 24px;
+    .servicecase {
+        width: 190px;
+        height: 190px;
+    }
 }
 
 .servicecase img {
@@ -828,6 +832,19 @@ p {
 .cta_title {
     display: inline-flex;
     align-items: center;
+}
+@media screen and (max-width: 768px) {
+    .servicefeatures {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .servicefeature {
+        width: 80%;
+        margin: 12px;
+    }
+    .servicefeature:nth-child(2n) {
+        margin-left: auto;
+    }
 }
 /* UTILS */
 .visuallyhidden {
