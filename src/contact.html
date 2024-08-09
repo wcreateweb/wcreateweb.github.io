@@ -1,0 +1,119 @@
+---
+layout: base.html
+title: Contact
+description: Kennismaken?
+---
+
+<div class="contactpage">
+    <div class="container">
+        <div class="contactform">
+            <h2>Kennismaken?</h2>
+            <p>
+                Een vet idee? Een hardnekkig probleem? Gewoon even sparren? Bel
+                of vul onderstaand formulier in en we kunnen je vast een
+                duidelijk beeld geven van de mogelijkheden.
+            </p>
+            <form class="contactpage_form">
+                <div class="formfield">
+                    <label for="name">Naam</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Naam"
+                    />
+                </div>
+                <div class="formfield">
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="E-mail"
+                    />
+                </div>
+                <div class="formfield">
+                    <label for="phone">Telefoon</label>
+                    <textarea
+                        id="phone"
+                        name="phone"
+                        placeholder="+31 (0)6 12345678"
+                    ></textarea>
+                </div>
+                <div class="formfield">
+                    <label for="message">Hoe kunnen wij helpen?</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Bericht"
+                    ></textarea>
+                </div>
+                <div class="formsubmit">
+                    <button type="submit">Verstuur</button>
+                </div>
+            </form>
+        </div>
+        <div class="contactmap">
+            <iframe
+                class="embed-maps"
+                width="600"
+                height="450"
+                style="border: 0"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB7VqC-5Xd7A0tK9u_RkfTDjmGczrbnA4s&q=WCreate"
+            ></iframe>
+            <div class="contactdata">
+                <div class="contactdata_colblack">
+                    <div class="contactdata_contact">
+                        <strong>Contact</strong>
+                        <div class="contactdata_item">
+                            <img
+                                width="26"
+                                height="26"
+                                src="/assets/img/icon-at.svg"
+                                alt="Email"
+                            />
+                            <a
+                                href="mailto:info@wcreate.nl"
+                                title="Verstuur een e-mail naar info@wcreate.nl"
+                                >info@wcreate.nl</a
+                            >
+                        </div>
+                    </div>
+                    <div class="contactdat_location">
+                        <strong>Adres</strong>
+                        <div class="contactdata_item">
+                            <img
+                                width="26"
+                                height="26"
+                                src="/assets/img/icon-mappin.svg"
+                                alt="Locatie"
+                            />
+                            <div class="contactdata_addresslines">
+                                <span>Netherlands</span>
+                                <span>Weusteweg 9a</span>
+                                <span>7641AG Wierden</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactdata_colgray">
+                    <div class="contactdata_dataline">
+                        <strong>KVK</strong>
+                        <span>57196567</span>
+                    </div>
+                    <div class="contactdata_dataline">
+                        <strong>BTW ID</strong>
+                        <span>NL002335622B54</span>
+                    </div>
+                    <div class="contactdata_dataline">
+                        <strong>IBAN</strong>
+                        <span>NL61 KNAB 0775 5691 94</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
