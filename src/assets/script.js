@@ -35,7 +35,7 @@ function initCarousel() {
     const emblaApiThumb = EmblaCarousel(thumbCarousel, {
         containScroll: "keepSnaps",
         dragFree: true,
-        startIndex: 2,
+        startIndex: 1,
     });
     carouselClickHandlers(emblaApiMain, emblaApiThumb);
     carouselThumbsBtnsActive(emblaApiMain, emblaApiThumb);
