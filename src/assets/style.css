@@ -770,9 +770,11 @@ p {
 
 /* SERVICES */
 .serviceintro {
-    max-width: 380px;
+    width: 520px;
+    max-width: 100%;
     margin: 0 auto;
     text-align: center;
+    padding: 0 24px;
 }
 
 .servicecases {
