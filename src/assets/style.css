@@ -925,6 +925,13 @@ p {
     height: 32px;
     font-family: var(--font-family);
 }
+.btn_submit {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.btn_submit:hover {
+    opacity: 1;
+}
 .contactus__img {
     width: 120px;
     height: 120px;
@@ -938,6 +945,11 @@ p {
 /* UTILS */
 .visuallyhidden {
     display: none;
+}
+label .required {
+    color: red;
+    font-size: 1rem;
+    vertical-align: text-bottom;
 }
 
 .loves_code {
