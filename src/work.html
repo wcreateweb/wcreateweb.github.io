@@ -105,35 +105,63 @@ description: WCreate heeft al vele websites, online winkels, apps en plugins ont
             <div class="portfolio_contact">
                 <aside class="contactus">
                     <img
+                        class="contactus__img"
                         width="196"
                         height="196"
-                        src="/assets/img/tijmen.jpg"
+                        src="https://placehold.it/196x196"
                         alt="Email"
                     />
                     <strong>Tijmen staat voor je klaar</strong>
-                    <div class="form_field">
-                        <label for="form_naam" class="form_label"
-                            >Je naam</label
-                        >
-                        <input id="form_naam" type="text" class="form_input" />
-                    </div>
-                    <div class="form_field">
-                        <label for="form_naam" class="form_label"
-                            >Waar kunnen we je bereiken?</label
-                        >
-                        <input
-                            id="form_naam"
-                            type="text"
-                            placeholder="Bijv. telefoonnummer of email"
-                            class="form_input"
-                        />
-                    </div>
-                    <div class="form_field">
-                        <label for="form_naam" class="form_label"
-                            >Je naam</label
-                        >
-                        <input id="form_naam" type="text" class="form_input" />
-                    </div>
+                    <p>
+                        Laat je naam en contactgegevens achter en dan neem ik direct je project met je door.
+                    </p>
+                    <br />
+                    <form
+                        action="https://formsubmit.co/info@wcreate.nl"
+                        method="POST"
+                    >
+                        <input type="hidden" name="_subject" value="Quick Contact">
+                        <input type="hidden" name="_next" value="https://wcreate.nl/thanks.html">
+                        <div class="form_field">
+                            <label for="form_naam" class="form_label"
+                                >Naam</label
+                            >
+                            <input
+                                id="form_naam"
+                                type="text"
+                                class="form_input"
+                                name="name"
+                                required
+                                placeholder="Bv. Jan Jansen"
+                            />
+                        </div>
+                        <div class="form_field">
+                            <label for="form_naam" class="form_label"
+                                >Hoe kan ik je bereiken?</label
+                            >
+                            <input
+                                id="form_naam"
+                                type="text"
+                                placeholder="Bv. 0612312312 of info@jebedrijf.nl"
+                                class="form_input"
+                                name="contact"
+                                required
+                            />
+                        </div>
+                        <div class="form_field">
+                            <label for="bericht" class="form_label"
+                                >In het kort..</label
+                            >
+                            <textarea
+                                id="bericht"
+                                name="message"
+                                class="form_input"
+                            ></textarea>
+                        </div>
+                        <div class="formsubmit">
+                            <button type="submit">Verstuur</button>
+                        </div>
+                    </form>
                 </aside>
             </div>
         </div>
