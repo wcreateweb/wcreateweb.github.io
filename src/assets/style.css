@@ -3,10 +3,10 @@
     --line-height: 24px;
     --font-family: "Inter", sans-serif;
 
-    --color-aliceblue: #E9F1F8;
+    --color-aliceblue: #CCF3FF;
     --color-smokyblack: #111111;
     --color-whitesmoke: #F6F6F6;
-    --color-frenchblue: #2477B9;
+    --color-frenchblue: #00B7FF;
     --color-gainsboro: #DCDCDC;
     --color-mintgreen: #EBF5F1;
 
@@ -606,7 +606,7 @@ p {
 }
 
 .hometools {
-    background: var(--color-mintgreen);
+    background: var(--color-frenchblue);
     padding: 40px 0;
     max-width: 100vw;
     overflow-x: scroll;
