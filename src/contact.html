@@ -7,17 +7,30 @@ description: Kennismaken?
 <div class="contactpage">
     <div class="container">
         <div class="contactform">
-            <h2>Kennismaken?</h2>
-            <p>
-                Een vet idee? Een hardnekkig probleem? Gewoon even sparren? Bel
-                of vul onderstaand formulier in en we kunnen je vast een
-                duidelijk beeld geven van de mogelijkheden.
-            </p>
-            <form class="contactpage_form" action="https://formsubmit.co/info@wcreate.nl" method="POST">
-                <input type="hidden" name="_subject" value="Contact">
-                <input type="hidden" name="_next" value="https://wcreate.nl/thanks.html">
+            <div class="contactform_intro">
+                <h2>Kennismaken?</h2>
+                <p>
+                    Een vet idee? Een hardnekkig probleem? Gewoon even sparren?
+                    Bel of vul onderstaand formulier in en we kunnen je vast een
+                    duidelijk beeld geven van de mogelijkheden.
+                </p>
+            </div>
+            <form
+                class="contactpage_form"
+                method="POST"
+                name="contact_contact"
+                netlify
+            >
+                <input type="hidden" name="_subject" value="Contact" />
+                <input
+                    type="hidden"
+                    name="_next"
+                    value="https://wcreate.nl/thanks.html"
+                />
                 <div class="formfield">
-                    <label for="name">Naam<span class="required">*</span></label>
+                    <label for="name"
+                        >Naam<span class="required">*</span></label
+                    >
                     <input
                         type="text"
                         id="name"
@@ -27,7 +40,9 @@ description: Kennismaken?
                     />
                 </div>
                 <div class="formfield">
-                    <label for="email">E-mail<span class="required">*</span></label>
+                    <label for="email"
+                        >E-mail<span class="required">*</span></label
+                    >
                     <input
                         type="email"
                         id="email"
@@ -45,7 +60,11 @@ description: Kennismaken?
                     />
                 </div>
                 <div class="formfield">
-                    <label for="message">Hoe kunnen wij helpen?<span class="required">*</span></label>
+                    <label for="message"
+                        >Hoe kunnen wij helpen?<span class="required"
+                            >*</span
+                        ></label
+                    >
                     <textarea
                         id="message"
                         name="message"
@@ -54,7 +73,9 @@ description: Kennismaken?
                     ></textarea>
                 </div>
                 <div class="formsubmit">
-                    <button class="btn btn_submit" type="submit">Verstuur</button>
+                    <button class="btn btn_submit" type="submit">
+                        Verstuur
+                    </button>
                 </div>
             </form>
         </div>
