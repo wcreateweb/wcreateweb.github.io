@@ -16,6 +16,13 @@ Created with [11ty](https://www.11ty.dev/) and based on [11ty Skeleton](https://
 
 
 ### Roadmap
+#### Must Do
+- Cases uitschrijven
+- Blog
+- Fotografie
+- Links naar pagina's vanuit home
+
+#### Could Do
 - Add domain availability check: https://domainr.com/docs/api?q=wcreate.nl
 
 
