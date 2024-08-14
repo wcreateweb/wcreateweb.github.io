@@ -3,6 +3,12 @@ module.exports = function (eleventyConfig) {
 
   return {
     passthroughFileCopy: true,
+    templateFormats: [
+			"md",
+			"njk",
+			"html",
+			"liquid",
+		],
     dir: {
       input: 'src',
       // better not use "public" as the name of the output folder (see above...)
